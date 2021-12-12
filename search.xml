@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/12/12/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>官方指南</p>
+<span id="more"></span>
+
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>书写技巧</category>
+      </categories>
+      <tags>
+        <tag>Hexo快速入门</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown技巧</title>
+    <url>/2021/12/12/%E4%B9%A6%E5%86%99%E6%8A%80%E5%B7%A7/Hexo%E5%86%99%E6%96%87%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<h1 id="一些书写的小技巧"><a href="#一些书写的小技巧" class="headerlink" title="一些书写的小技巧"></a>一些书写的小技巧</h1><p>总结一些关于Marketdown书写的小技巧 </p>
+<span id="more"></span>
+
+<p>创建一个新的md文本，hexo new [layout] </p>
+<h2 id="关于标题"><a href="#关于标题" class="headerlink" title="-  关于标题"></a>-  关于标题</h2><blockquote>
+<p>建议使用#作为标记，底线形式不易阅读和修改源文档<br>建议标题的前后都要空1行（除非标题在文档最开头），标题与正文间最好也空1行<br>标题最后不要有标点符号<br>标题应尽量简短，方便引用，可将长句提前出标题，将长句作为标题下的内容，如引言等</p>
+</blockquote>
+<h2 id="粗体和斜体"><a href="#粗体和斜体" class="headerlink" title="-  粗体和斜体"></a>-  粗体和斜体</h2><blockquote>
+<p>建议使用“ * ”号而不是下划线“ —”</p>
+</blockquote>
+<h2 id="段落与换行"><a href="#段落与换行" class="headerlink" title="-  段落与换行"></a>-  段落与换行</h2><blockquote>
+<p>段落的识别通过在行与行间加入空行实现<br>段内换行需要在上一行结尾加入两个以上空格然后回车<br>没行字数不宜过多，80个字符左右即可</p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="-  列表"></a>-  列表</h2><blockquote>
+<ul>
+<li>有序列表采用 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">数字序号 + 英文句号 + 空格 + 列表内容</span><br></pre></td></tr></table></figure></li>
+<li>无序列表建议采用“ - ”号, “ * “号容易与字体识别冲突，” + “号不常用  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*/-/+   +空格 + 列表内容</span><br></pre></td></tr></table></figure>
+  列表可通过在列前面加 Tab 实现多级嵌套<br>  如果列表中的列表项有换行，建议无序列3空格，有序列2空格<br>  如果列表项有换换行，建议列表项间空1行<br>  列表开始和结尾空一行</li>
+</ul>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="- 分割线"></a>- 分割线</h2><hr>
+<blockquote>
+<ul>
+<li>三个 */-/_ 来分割，行内不能有其他字符</li>
+</ul>
+</blockquote>
+<h2 id="图片插入与链接"><a href="#图片插入与链接" class="headerlink" title="- 图片插入与链接"></a>- 图片插入与链接</h2><blockquote>
+<ul>
+<li>链接<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">！[图片代替文字]（图片地址）</span><br></pre></td></tr></table></figure></li>
+<li>文字链接（文章内网址）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[链接文字]（链接地址）</span><br></pre></td></tr></table></figure></li>
+<li>引用链接<br>先在文章末尾将链接地址作为 ‘变量’ 定位好，然后于正文引用<br>链接地址为网址时要以 http/https 开头，否则被识别为本地<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">正文中： [链接文字][链接标记]  </span><br><span class="line">底部：   [链接标记]：链接地址</span><br></pre></td></tr></table></figure></li>
+<li>网址链接<br>在 Markdown 中的网址用 &lt; &gt; 包裹后自动转变为超链接;推荐使用超链接操作，建议网址以http/https:开头，如不想使用超链接，可以选择用‘ ’包裹</li>
+</ul>
+</blockquote>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="- 代码块"></a>- 代码块</h2><blockquote>
+<ul>
+<li>推荐使用围栏代码块代替原本的 Tab 或4空格开头<br>围栏代码用三个波浪线或```代替，可标注编程语言类别</li>
+<li>代码块行尾加 \可避免换行</li>
+</ul>
+</blockquote>
+<h2 id="引用"><a href="#引用" class="headerlink" title="- 引用"></a>- 引用</h2><blockquote>
+<ul>
+<li>在引用的句子开头加 &gt; + 引用内容，建议符号和内容间加空格</li>
+<li>段落与换行的格式在引用中同样适用</li>
+</ul>
+</blockquote>
+<h2 id="转义符号"><a href="#转义符号" class="headerlink" title="- 转义符号"></a>- 转义符号</h2><blockquote>
+<p>插入 \ 在你不想被渲染的符号前即可</p>
+</blockquote>
+<h2 id="GFM拓展语法"><a href="#GFM拓展语法" class="headerlink" title="GFM拓展语法"></a>GFM拓展语法</h2><blockquote>
+<ul>
+<li>删除线：在文字两端加~~即可，<del>我被删除了</del></li>
+<li>表情符号：在表情代码两端加:即可</li>
+<li>表格:</li>
+</ul>
+</blockquote>
+<p>##截断</p>
+<blockquote>
+<ul>
+<li>在文章中使用 <!-- more -->，那么 <!-- more --> 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。</li>
+</ul>
+</blockquote>
+]]></content>
+      <categories>
+        <category>书写技巧</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PPT答辩文稿</title>
+    <url>/2021/12/12/%E6%AF%95%E4%B8%9A%E7%97%95%E8%BF%B9/%E7%AD%94%E8%BE%A9ppt/</url>
+    <content><![CDATA[<h1 id="大学物理实验可视化仿真系统设计"><a href="#大学物理实验可视化仿真系统设计" class="headerlink" title="大学物理实验可视化仿真系统设计"></a>大学物理实验可视化仿真系统设计</h1><p>毕业设计的演讲</p>
+<span id="more"></span>
+<h2 id="0-开场白、流程介绍-p1-p2"><a href="#0-开场白、流程介绍-p1-p2" class="headerlink" title="0.开场白、流程介绍 p1 - p2"></a>0.开场白、流程介绍 p1 - p2</h2><ul>
+<li>各位老师大家好，我是本次的汇报人邴昱博；我汇报的题目是：大学物理实验可视化仿真系统设计（p1）  </li>
+<li>我将从以下五个方面进行汇报，分别是：研究背景、论文主题、设计思路、成果展示以及论文总结。（p2）</li>
+</ul>
+<h2 id="1-研究背景-p3-p4"><a href="#1-研究背景-p3-p4" class="headerlink" title="1.研究背景 p3 - p4"></a>1.研究背景 p3 - p4</h2><ul>
+<li>通过实验现象探究物质运动的本质是物理学研究最基础的过程，在大学物理理论的实习过程中，必须基于实验的辅助。<br>然而实验教学往往存在一些制约，包括学习者自身问题、实验操作难度问题、设备和环境问题、以及诸如此次疫情一样的特殊情况<br>采用仿真实验可以规避一些制约，仿真程序具有降低操作难度、规避不良因、高效数据处理、便捷操作环境等优点<br>此次论文的研究意义就在于：通过仿真程序将抽象知识形象化，帮助学生更好地理解抽象的物理概念、公式和复杂的物理过程。（p4）</li>
+</ul>
+<h2 id="2-论文主题-p5-p6"><a href="#2-论文主题-p5-p6" class="headerlink" title="2.论文主题 p5 - p6"></a>2.论文主题 p5 - p6</h2><ul>
+<li>本论文主要基于MATLAB GUI自行设计一个大学物理实验仿真系统集合，该系统集成了六种物理学实验，涵盖了电学，力学，磁学，光学四个方面。</li>
+<li>其目的在于：展示出MATLB仿真程序在大学物理实验教学中的良好辅助作用；归纳仿真程序设计思路；分析仿真实验的优缺点。（p6）</li>
+</ul>
+<h2 id="3-设计思路-p7-p12"><a href="#3-设计思路-p7-p12" class="headerlink" title="3.设计思路 p7 - p12"></a>3.设计思路 p7 - p12</h2><p>本系统的设计思路主要有以下五个方面：</p>
+<ol>
+<li>第一步：熟知原理</li>
+</ol>
+<ul>
+<li>对原理的准确把握是实验能否被成功模拟的关键，对原理的不断深挖是模拟仿真度的保证。  </li>
+<li>在此次实验仿真设计的过程中，本人通过参考大学物理实验手册的实验描述并请教林宝卿老师，初步掌握设计目标所需实验原理，对其进行程序化描述  </li>
+<li>为了更好的模拟出实物实验，本人参考了大学物理实验中心拍摄的视频，并结合实验手册上的步骤说明，以此为基础设计仿真实验步骤。(p8)</li>
+</ul>
+<ol start="2">
+<li>第二步：界面布局</li>
+</ol>
+<ul>
+<li>GUI的界面布局设计是指根据具体实验所需，在GUI面板界面合理安排具有不同功能的组件，组合出合理的程序窗口。包括显示图像的坐标区域，启动操作的按钮，滑条等。GUI界面是用户与程序交互的唯一窗口。用户通过与不同的组件发生交互，以此进行实验。良好的交互界面是仿真程序的要素之一。</li>
+<li>下面是仿真系统的主界面布局和其中牛顿环实验的实验界面布局。（p9）</li>
+</ul>
+<ol start="3">
+<li>第三步：回调函数</li>
+</ol>
+<ul>
+<li>回调函数是指针对每个组件功能所编写的函数，其目的是为了实现组件所需功能。在界面布局中有很多不同的组件，我们需要对每个组件编写回调函数，才能使得用户在点击控件时产生相应的操作。对于实物实验步骤的模拟就是，通过点击不同组件来模拟不同的步骤。下图为牛顿环实验控件效果展示。(p10)</li>
+</ul>
+<ol start="4">
+<li>第四步：可视化编程</li>
+</ol>
+<ul>
+<li>可视化编程是指将实验原理的程序化表达。即根据实验原理，编写出原理公式的程序化语言，通过可视化编程，将获得数据信息展示为数据的计算处理，拟合，图像，动画等形式。下图是一些可视化编程的效果（p11）</li>
+</ul>
+<ol start="5">
+<li>第五步：优化</li>
+</ol>
+<ul>
+<li>在完成仿真程序设计后，要不断的进行优化。以提高实验的准确性和程序的交互性作为优化方向。<br>对原理的掌握可以提高程序的准确度，不断优化操作步骤可以提升交互性。</li>
+<li> 例如：在牛顿环实验时，用户需要额外点击测量按钮之后，才会出现十字叉丝进行测量。在之后音叉实验中，当点击运行得出图像后，用户只需在图像上点击鼠标左键，即可自动进入取点模式。在优化的过程中，本人还添加了鼠标所示位置坐标实时显示等功能，丰富了系统功能，提高了仿真实验的流畅性和交互性。（p12）</li>
+</ul>
+<h2 id="4-成果展示-p13-p14"><a href="#4-成果展示-p13-p14" class="headerlink" title="4. 成果展示 p13 - p14"></a>4. 成果展示 p13 - p14</h2><ul>
+<li>30s 演示视频</li>
+</ul>
+<h2 id="5-总结与展望-p15-p17"><a href="#5-总结与展望-p15-p17" class="headerlink" title="5. 总结与展望 p15 - p17"></a>5. 总结与展望 p15 - p17</h2><h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><ul>
+<li>首先仿真程序的优点有</li>
+</ul>
+<blockquote>
+<ol>
+<li>时间的延迟与加快 ：<br>物理实验进行的时间有长有断，利用仿真程序我们可以根据需要延长或缩短一些进程</li>
+<li>可重复性 :<br>实物实验教学往往出于环境、成本，时间等因素不能多次重复。<br>利用仿真实验，可以对物理实验现象任意次数的重复。</li>
+<li>理想化<br>在仿真中可以完全排除次要因素对实验的影响，达到理想化条件。</li>
+<li>不受器材等因素制约</li>
+</ol>
+</blockquote>
+<ul>
+<li>缺点</li>
+</ul>
+<blockquote>
+<ol>
+<li>原理的程序化难度:<br>对原理的程序化表达决定着仿真效果，原理的程序化受制于编程者水平。</li>
+<li>“模拟实验”：<br>再逼真的仿真也只是计算机模拟，并不能完全反映真实情况。在j讲求实事求是的物理学中，仿真实验终究只能作为教学辅助。</li>
+</ol>
+</blockquote>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><p>在本次论文的写作过程中，本人初步完成了一个大学物理可视化仿真系统的设计，展现出仿真实验具有良好交互性，易于使用的特点。运用计算机辅助系统，确实可以做到对大学物理实验教学的辅助作用。</p>
+</li>
+<li><p>但在进行设计的过程中，发现了仿真实验的一些不足，这些不足从侧面证明了目前的仿真系统只能作为教学辅助。尤其是限制于本人的学识水平和编程技能，加上疫情的影响，没法进行实物实验操作。使得本人对于一些实验的原理程序化做的并不完善，降低了仿真系统的拓展性和准确度。</p>
+</li>
+</ul>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      <categories>
+        <category>毕业痕迹</category>
+      </categories>
+      <tags>
+        <tag>离校</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离校手续</title>
+    <url>/2021/12/12/%E6%AF%95%E4%B8%9A%E7%97%95%E8%BF%B9/%E7%A6%BB%E6%A0%A1%E6%89%8B%E7%BB%AD/</url>
+    <content><![CDATA[<h1 id="离校前的各项准备"><a href="#离校前的各项准备" class="headerlink" title="离校前的各项准备"></a>离校前的各项准备</h1><span id="more"></span>
+
+<p>6.8 号前上交材料</p>
+<p>6.11 通讯录</p>
+<p>6.5-6.12 核对派遣方案（落实档案）</p>
+<p>17 号上交学生证、毕业登记表、领学位服 </p>
+<p>就业材料</p>
+<p>18 号缴费</p>
+<p>19 号网上办离校手续</p>
+<p>20 就业材料上交团委，学生证 (15号左右开始寄东西)</p>
+<p>21 号办理退房</p>
+<p>22 交学士服</p>
+<p>23 清宿舍，领材料</p>
+]]></content>
+      <categories>
+        <category>毕业痕迹</category>
+      </categories>
+      <tags>
+        <tag>离校</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown官方文档</title>
+    <url>/2021/12/12/%E4%B9%A6%E5%86%99%E6%8A%80%E5%B7%A7/Makrdown%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/Markdown%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><blockquote>
+<h4 id="Markdown是什么？"><a href="#Markdown是什么？" class="headerlink" title="Markdown是什么？"></a>Markdown<em>是什么</em>？</h4><h4 id="谁创造了它？"><a href="#谁创造了它？" class="headerlink" title="谁创造了它？"></a><em>谁</em>创造了它？</h4><h4 id="为什么要使用它？"><a href="#为什么要使用它？" class="headerlink" title="为什么要使用它？"></a><em>为什么</em>要使用它？</h4><h4 id="怎么使用？"><a href="#怎么使用？" class="headerlink" title="怎么使用？"></a><em>怎么</em>使用？</h4><h4 id="谁在用？"><a href="#谁在用？" class="headerlink" title="谁在用？"></a><em>谁</em>在用？</h4><h4 id="尝试一下"><a href="#尝试一下" class="headerlink" title="尝试一下"></a>尝试一下</h4></blockquote>
+<span id="more"></span>
+
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="1-Markdown是什么？"><a href="#1-Markdown是什么？" class="headerlink" title="1. Markdown是什么？"></a>1. Markdown<em>是什么</em>？</h3><p><strong>Markdown</strong>是一种轻量级<strong>标记语言</strong>，它以纯文本形式(<em>易读、易写、易更改</em>)编写文档，并最终以HTML格式发布。<br><strong>Markdown</strong>也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。    </p>
+<h3 id="2-谁创造了它？"><a href="#2-谁创造了它？" class="headerlink" title="2. 谁创造了它？"></a>2. <em>谁</em>创造了它？</h3><p>它由<a href="http://www.aaronsw.com/"><strong>Aaron Swartz</strong></a>和<strong>John Gruber</strong>共同设计，<strong>Aaron Swartz</strong>就是那位于去年（<em>2013年1月11日</em>）自杀,有着<strong>开挂</strong>一般人生经历的程序员。维基百科对他的<a href="http://zh.wikipedia.org/wiki/%E4%BA%9A%E4%BC%A6%C2%B7%E6%96%AF%E6%B2%83%E8%8C%A8">介绍</a>是：<strong>软件工程师、作家、政治组织者、互联网活动家、维基百科人</strong>。    </p>
+<p>他有着足以让你跪拜的人生经历：    </p>
+<ul>
+<li><strong>14岁</strong>参与RSS 1.0规格标准的制订。     </li>
+<li><strong>2004</strong>年入读<strong>斯坦福</strong>，之后退学。   </li>
+<li><strong>2005</strong>年创建<a href="http://infogami.org/">Infogami</a>，之后与<a href="http://www.reddit.com/">Reddit</a>合并成为其合伙人。   </li>
+<li><strong>2010</strong>年创立求进会（Demand Progress），积极参与禁止网络盗版法案（SOPA）活动，最终该提案被撤回。   </li>
+<li><strong>2011</strong>年7月19日，因被控从MIT和JSTOR下载480万篇学术论文并以免费形式上传于网络被捕。     </li>
+<li><strong>2013</strong>年1月自杀身亡。    </li>
+</ul>
+<p><img src="F:\Blog\Hexo\source_posts\书写技巧\Makrdown官方文档\Aaron_Swartz.jpg" alt="Aaron Swartz"></p>
+<p>天才都有早逝的归途。</p>
+<h3 id="3-为什么要使用它？"><a href="#3-为什么要使用它？" class="headerlink" title="3. 为什么要使用它？"></a>3. <em>为什么</em>要使用它？</h3><ul>
+<li>它是易读（看起来舒服）、易写（语法简单）、易更改<strong>纯文本</strong>。处处体现着<strong>极简主义</strong>的影子。</li>
+<li>兼容HTML，可以转换为HTML格式发布。</li>
+<li>跨平台使用。</li>
+<li>越来越多的网站支持Markdown。</li>
+<li>更方便清晰地组织你的电子邮件。（Markdown-here, Airmail）</li>
+<li>摆脱Word（我不是认真的）。</li>
+</ul>
+<h3 id="4-怎么使用？"><a href="#4-怎么使用？" class="headerlink" title="4. 怎么使用？"></a>4. <em>怎么</em>使用？</h3><p>如果不算<strong>扩展</strong>，Markdown的语法绝对<strong>简单</strong>到让你爱不释手。</p>
+<p>Markdown语法主要分为如下几大部分：<br><strong>标题</strong>，<strong>段落</strong>，<strong>区块引用</strong>，<strong>代码区块</strong>，<strong>强调</strong>，<strong>列表</strong>，<strong>分割线</strong>，<strong>链接</strong>，<strong>图片</strong>，**反斜杠 <code>\</code><strong>，</strong>符号’`’**。</p>
+<h4 id="4-1-标题"><a href="#4-1-标题" class="headerlink" title="4.1 标题"></a>4.1 标题</h4><p>两种形式：<br>1）使用<code>=</code>和<code>-</code>标记一级和二级标题。</p>
+<blockquote>
+<p>一级标题<br><code>=========</code><br>二级标题<br><code>---------</code></p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题   "></a>一级标题   </h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<p>2）使用<code>#</code>，可表示1-6级标题。</p>
+<blockquote>
+<p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题    </p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h4 id="4-2-段落"><a href="#4-2-段落" class="headerlink" title="4.2 段落"></a>4.2 段落</h4><p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用<strong>两个以上</strong>空格加上回车（引用中换行省略回车）。</p>
+<h4 id="4-3-区块引用"><a href="#4-3-区块引用" class="headerlink" title="4.3 区块引用"></a>4.3 区块引用</h4><p>在段落的每行或者只在第一行使用符号<code>&gt;</code>,还可使用多个嵌套引用，如：</p>
+<blockquote>
+<p>&gt; 区块引用<br>&gt;&gt; 嵌套引用  </p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p>区块引用  </p>
+<blockquote>
+<p>嵌套引用</p>
+</blockquote>
+</blockquote>
+<h4 id="4-4-代码区块"><a href="#4-4-代码区块" class="headerlink" title="4.4 代码区块"></a>4.4 代码区块</h4><p>代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如<br>普通段落：</p>
+<p>void main()<br>{<br>    printf(“Hello, Markdown.”);<br>}    </p>
+<p>代码区块：</p>
+<pre><code>void main()
+&#123;
+    printf(&quot;Hello, Markdown.&quot;);
+&#125;
+</code></pre>
+<p><strong>注意</strong>:需要和普通段落之间存在空行。</p>
+<h4 id="4-5-强调"><a href="#4-5-强调" class="headerlink" title="4.5 强调"></a>4.5 强调</h4><p>在强调内容两侧分别加上<code>*</code>或者<code>_</code>，如：</p>
+<blockquote>
+<p>*斜体*，_斜体_<br>**粗体**，__粗体__</p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p><em>斜体</em>，<em>斜体</em><br><strong>粗体</strong>，<strong>粗体</strong></p>
+</blockquote>
+<h4 id="4-6-列表"><a href="#4-6-列表" class="headerlink" title="4.6 列表"></a>4.6 列表</h4><p>使用<code>·</code>、<code>+</code>、或<code>-</code>标记无序列表，如：</p>
+<blockquote>
+<p>-（+*） 第一项<br>-（+*） 第二项<br>- （+*）第三项</p>
+</blockquote>
+<p><strong>注意</strong>：标记后面最少有一个_空格_或_制表符_。若不在引用区块中，必须和前方段落之间存在空行。</p>
+<p>效果：</p>
+<blockquote>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<p>有序列表的标记方式是将上述的符号换成数字,并辅以<code>.</code>，如：</p>
+<blockquote>
+<p>1 . 第一项<br>2 . 第二项<br>3 . 第三项    </p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+</blockquote>
+<h4 id="4-7-分割线"><a href="#4-7-分割线" class="headerlink" title="4.7 分割线"></a>4.7 分割线</h4><p>分割线最常使用就是三个或以上<code>*</code>，还可以使用<code>-</code>和<code>_</code>。</p>
+<h4 id="4-8-链接"><a href="#4-8-链接" class="headerlink" title="4.8 链接"></a>4.8 链接</h4><p>链接可以由两种形式生成：<strong>行内式</strong>和<strong>参考式</strong>。<br><strong>行内式</strong>：</p>
+<blockquote>
+<p>[younghz的Markdown库](https:://github.com/younghz/Markdown “Markdown”)。</p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz的Markdown库</a>。</p>
+</blockquote>
+<p><strong>参考式</strong>：</p>
+<blockquote>
+<p>[younghz的Markdown库1][1]<br>[younghz的Markdown库2][2]<br>[1]:https:://github.com/younghz/Markdown “Markdown”<br>[2]:https:://github.com/younghz/Markdown “Markdown”    </p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz的Markdown库1</a><br><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz的Markdown库2</a></p>
+</blockquote>
+<p><strong>注意</strong>：上述的<code>[1]:https:://github.com/younghz/Markdown &quot;Markdown&quot;</code>不出现在区块中。</p>
+<h4 id="4-9-图片"><a href="#4-9-图片" class="headerlink" title="4.9 图片"></a>4.9 图片</h4><p>添加图片的形式和链接相似，只需在链接的基础上前方加一个<code>！</code>。</p>
+<h4 id="4-10-反斜杠"><a href="#4-10-反斜杠" class="headerlink" title="4.10 反斜杠\"></a>4.10 反斜杠<code>\</code></h4><p>相当于<strong>反转义</strong>作用。使符号成为普通符号。</p>
+<h4 id="4-11-符号’-’"><a href="#4-11-符号’-’" class="headerlink" title="4.11 符号’`’"></a>4.11 符号’`’</h4><p>起到标记作用。如：</p>
+<blockquote>
+<p>`ctrl+a`</p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p><code>ctrl+a</code>    </p>
+</blockquote>
+<h4 id="5-谁在用？"><a href="#5-谁在用？" class="headerlink" title="5. 谁在用？"></a>5. <em>谁</em>在用？</h4><p>Markdown的使用者：</p>
+<ul>
+<li>GitHub</li>
+<li>简书</li>
+<li>Stack Overflow</li>
+<li>Apollo</li>
+<li>Moodle</li>
+<li>Reddit</li>
+<li>等等</li>
+</ul>
+<h4 id="6-尝试一下"><a href="#6-尝试一下" class="headerlink" title="6. 尝试一下"></a>6. 尝试一下</h4><ul>
+<li><strong>Chrome</strong>下的插件诸如<code>stackedit</code>与<code>markdown-here</code>等非常方便，也不用担心平台受限。</li>
+<li><strong>在线</strong>的dillinger.io评价也不错   </li>
+<li><strong>Windowns</strong>下的MarkdownPad也用过，不过免费版的体验不是很好。    </li>
+<li><strong>Mac</strong>下的Mou是国人贡献的，口碑很好。</li>
+<li><strong>Linux</strong>下的ReText不错。    </li>
+</ul>
+<p><strong>当然，最终境界永远都是笔下是语法，心中格式化 :)。</strong></p>
+<hr>
+<p><strong>注意</strong>：不同的Markdown解释器或工具对相应语法（扩展语法）的解释效果不尽相同，具体可参见工具的使用说明。<br>虽然有人想出面搞一个所谓的标准化的Markdown，[没想到还惹怒了健在的创始人John Gruber]<br>(<a href="http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/">http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/</a> )。</p>
+<hr>
+<p>以上基本是所有traditonal markdown的语法。</p>
+<h3 id="其它："><a href="#其它：" class="headerlink" title="其它："></a>其它：</h3><p>列表的使用(非traditonal markdown)：</p>
+<p>用<code>|</code>表示表格纵向边界，表头和表内容用<code>-</code>隔开，并可用<code>:</code>进行对齐设置，两边都有<code>:</code>则表示居中，若不加<code>:</code>则默认左对齐。</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码库</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MarkDown</td>
+<td><a href="https://github.com/younghz/Markdown" title="Markdown">https://github.com/younghz/Markdown</a></td>
+</tr>
+<tr>
+<td align="center">MarkDownCopy</td>
+<td><a href="https://github.com/younghz/Markdown" title="Markdown">https://github.com/younghz/Markdown</a></td>
+</tr>
+</tbody></table>
+<p>关于其它扩展语法可参见具体工具的使用说明。</p>
+]]></content>
+      <categories>
+        <category>书写技巧</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+</search>
